@@ -8,8 +8,161 @@
 
 :root {
     font-size: 62.5%;
+
+    --color-base-white: #FFFFFF;
+    --color-base-white-200: #F4FCFF;
+    --color-base-blue: #065E7C;
+    --color-base-ligthblue: #387E96;
+    --color-base-black: #202024;
+    --color-base-ligthblack: #121214;
 }
 
 html, body, input {
     font-family: 'Mulish', sans-serif;
+}
+
+body {
+    max-width: 43rem;
+}
+
+header {
+    height: 7.2rem;
+    
+    display: flex;
+    align-items: center;
+    gap: 2.6rem;
+
+    padding: 1.6rem 2.8rem;
+
+    background-color: var(--color-base-blue);
+}
+
+.logo {
+    width: 4rem;
+    height: 4rem;
+
+    display: flex;
+    align-items: center;
+
+    border-radius: 9rem;
+
+    padding: .9rem .8rem;
+
+    background-color: var(--color-base-white-200);
+}
+
+header form {
+    flex: 1;
+}
+
+.input-wrapper label {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+}
+
+.input-wrapper input {
+    width: 100%;
+    padding: 1.2rem 1.4rem;
+
+    background-color: var(--color-base-ligthblue);
+    color: var(--color-base-white);
+
+    border: 0;
+    border-radius: .4rem;
+
+    font-size: 1.6rem;
+    font-weight: 400;
+    
+}
+
+.input-wrapper input::placeholder {
+    color: var(--color-base-white);
+    opacity: 0.80;
+}
+
+
+.avatar {
+    width: 4.2rem;
+    height: 4.2rem;
+
+    border-radius: 9rem;
+}
+
+.container {
+    padding: 3.1rem 2.3rem 3.9rem;
+}
+
+h1 {
+    font-size: 2.4rem;
+    font-weight: bold;
+
+    margin-bottom: .8rem;
+}
+
+.button-wrapper {
+    display: flex;
+    gap: 1.2rem;
+    
+    margin-bottom: 3.1rem;
+}
+
+button {
+    height: 4rem;
+    width: 4rem;
+
+    background-color: var(--color-base-white);
+
+    border: 0;
+}
+
+p {
+    font-size: 1.6rem;
+    line-height: 160%;
+
+    color: var(--color-base-ligthblack);
+}
+
+section {
+    margin-top: 3.4rem;
+}
+
+figure {
+    display: flex;
+    gap: 1.6rem;
+
+    margin-top: 3.2rem;
+    
+}
+
+.details {
+    width: 21.5rem;
+}
+
+.details h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 160%;
+}
+
+.details p {
+    font-size: 1.4rem;
+    line-height: 160%;
+}
+
+footer {
+    height: 6.4rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--color-base-blue);
+    color: var(--color-base-white);
+}
+
+footer p {
+    font-size: 1.6rem;
+    font-weight: 400;
 }
