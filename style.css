@@ -92,7 +92,6 @@ header form {
 }
 
 .container {
-    /*padding: 3.1rem 2.3rem 3.9rem;*/
     box-sizing: border-box;
 }
 
@@ -210,3 +209,43 @@ footer p {
     }
 
 }
+
+
+/* Adicionando algumas animações no projeto */
+
+header {
+    --startY: 100%; /* Definindo a variavel de inicio como 100% */
+    animation: move .2s;
+}
+
+footer {
+    --startY: 100%;
+    animation: move .2s;
+}
+
+/* Keyframes para movimento do header e footer na animation */
+@keyframes move {
+    from {
+        transform: translateY(var(--startY));
+    }
+}
+
+.item {
+    --delay: .3s; /* -> criação da var --delay para definir um delay para o surgimento dos itens no main*/
+    animation: appear 3s var(--delay) backwards;
+
+    /* IMPORTANTE: Para dar o efeito de cada item aparecer em sequencia, necessario definir no HTML o valor da var --delay de cada item */
+}
+
+/* criação do @keyframes para aparecer os itens do main */
+@keyframes appear {
+    0% {
+        opacity: 0;
+        transform: scale(0.7);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+}
+
