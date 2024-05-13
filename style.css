@@ -23,6 +23,7 @@ html, body, input {
 
 body {
     max-width: 43rem;
+    margin: 0 auto;
 }
 
 header {
@@ -91,7 +92,12 @@ header form {
 }
 
 .container {
-    padding: 3.1rem 2.3rem 3.9rem;
+    /*padding: 3.1rem 2.3rem 3.9rem;*/
+    box-sizing: border-box;
+}
+
+.first-img {
+    margin-bottom: 3.1rem;
 }
 
 h1 {
@@ -122,10 +128,6 @@ p {
     line-height: 160%;
 
     color: var(--color-base-ligthblack);
-}
-
-section {
-    margin-top: 3.4rem;
 }
 
 figure {
@@ -159,10 +161,52 @@ footer {
     align-items: center;
 
     background-color: var(--color-base-blue);
-    color: var(--color-base-white);
 }
 
 footer p {
     font-size: 1.6rem;
     font-weight: 400;
+    color: var(--color-base-white);
+}
+
+
+/* media queries */
+@media (min-width: 770px) {
+    body {
+        max-width: 1600px;
+    }
+
+    header {
+        padding: 1.6rem 11.2rem;
+    }
+
+    main {
+        padding: 4.4rem 11rem 40rem;
+
+        display: flex;
+        gap: 5rem;
+
+        height: 130vh;
+    }
+
+
+    .first-img {
+        width: 80.3rem;
+        max-height: 40.5rem;
+    }
+
+    .title-wrapper {
+        display: flex;
+        justify-content: space-between;
+
+        max-width: 80rem;
+        height: 4rem;
+
+        margin-bottom: 3.1rem;
+    }
+
+    .artigo-principal {
+        width: 80rem;
+    }
+
 }
